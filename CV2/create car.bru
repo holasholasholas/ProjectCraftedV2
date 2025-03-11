@@ -1,0 +1,20 @@
+meta {
+  name: create car
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/garage
+  body: json
+  auth: none
+}
+
+body:json {
+  { "owner": "67d03defa8fcc7681330dbd9",
+    "make": "Toyota",
+    "model": "Camry",
+    "yearOfManufacture": 2022
+    
+  }
+}

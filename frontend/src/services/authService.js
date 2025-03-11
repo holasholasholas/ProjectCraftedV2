@@ -1,3 +1,5 @@
+import { token } from "morgan";
+
 const BASE_URL = `${import.meta.env.VITE_BACK_END_SERVER_URL}/auth`;
 
 
@@ -19,6 +21,7 @@ async function signUp(formData) {
     }
 
     if (data.token) {
+      console.log(data.token)
       localStorage.setItem('token', data.token);
       return JSON.parse(atob(data.token.split('.')[1])).payload;
     }

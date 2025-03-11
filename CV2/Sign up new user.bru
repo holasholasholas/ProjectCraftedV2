@@ -1,0 +1,20 @@
+meta {
+  name: Sign up new user
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost3000/auth/sign-up
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "test",
+    "username": "dasd",
+    "password": "asdwda",
+    
+  }
+}

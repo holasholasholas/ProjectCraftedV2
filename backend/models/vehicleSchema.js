@@ -2,11 +2,11 @@ const mongoose = require("mongoose");
 
 const vehicleSchema = new mongoose.Schema({
 
-  // owner: {
-  //   type: mongoose.Schema.Types.ObjectId,
-  //   ref: 'User',
-  //   required: true
-  // },
+  owner: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
+  },
     model: { type: String, required: true },
     make: { type: String, required: true },
     yearOfManufacture: { type: Number, required: true },
